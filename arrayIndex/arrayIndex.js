@@ -43,7 +43,7 @@ function __remove(arr) {
     return result;
 }
 
-var numbers = [2, 7, 1, 5, 7, 2];
+var numbers = [2, 7, 1, 5, 7, 2, 5, 6, 3, 4];
 var strings = ['JS', 'is', 'not', 'awesome'];
 var data = [{i: 1}, {i: 2}, {i: 3}, {i: 4}, {i: 5}];
 var random = [undefined, 'str', null, 42, {data: data}];
