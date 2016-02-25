@@ -14,11 +14,11 @@
     };
 
     Observable.prototype.on = function (eventName, callback) {
-        bindFunction.call(obj, eventName, callback, false);
+        bindFunction.call(this, eventName, callback, false);
     };
 
     Observable.prototype.one = function (eventName, callback) {
-        bindFunction.call(obj, eventName, callback, true);
+        bindFunction.call(this, eventName, callback, true);
     };
 
     Observable.prototype.fire = function (eventName) {
