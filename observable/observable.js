@@ -48,14 +48,22 @@
     this.Observable = Observable;
 })();
 
-var obj = new Observable();
+var o = new Observable();
 
-obj.one('one', function (a) {
+o.one('one', function (a) {
     console.log('first' + a);
-    obj.one('one', function () {
+    o.one('one', function () {
         console.log('second');
     });
 });
 
-obj.fire('one', 1);
-obj.fire('one');
+o.fire('one', 1);
+o.fire('one');
+
+var b = new Observable();
+
+b.one('one', function (a) {
+    console.log('first' + a);
+});
+
+b.fire('one', 2);
